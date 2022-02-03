@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlio.h>
+#include <string.h>
 
 main()
 {
@@ -9,5 +9,5 @@ main()
 
     puts(str);
 
-    return(0)
+    return(0);
 }
