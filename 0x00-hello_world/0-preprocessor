@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -o Task0.c
+gcc $CFILE -o main.c
