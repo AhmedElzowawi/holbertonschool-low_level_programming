@@ -3,9 +3,9 @@
 
 int main () {
 
-    char str[52];
+    char str[52] = "Programming is like building a multilingual puzzle";
 
-    strcpy(str, "Programming is like building a multilingual puzzle");
+    strcpy(str);
 
     puts(str);
 
