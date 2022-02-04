@@ -22,13 +22,13 @@ int main(void)
 				putchar(firstDigit);
 				putchar(secondDigit);
 				putchar(thirdDigit);
-					}
-				if (firstDigit != '7')
+					if (firstDigit != '7')
 				{
 						putchar(comma);
 						putchar(space);
 				}
-				}	
+					}
+				}
 			}
 		}
 	}
