@@ -23,14 +23,12 @@ int main(void)
 				putchar(secondDigit);
 				putchar(thirdDigit);
 					}
-
-				}
-
-					if (firstDigit != '7')
+				if (firstDigit != '7')
 				{
 						putchar(comma);
 						putchar(space);
 				}
+				}	
 			}
 		}
 	}
