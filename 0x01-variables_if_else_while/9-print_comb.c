@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
   * main - prints if number is positive, 0 or negative
@@ -13,7 +13,7 @@ int main(void)
 	for (singleDigit = '0'; singleDigit <= '9'; ++singleDigit)
 	{
 	putchar(singleDigit);
-	
+
 	putchar(comma);
 	putchar(space);
 	}
