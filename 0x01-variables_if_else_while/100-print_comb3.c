@@ -19,7 +19,7 @@ int main(void)
 				putchar(firstDigit);
 				putchar(secondDigit);
 
-					if (firstDigit != '8' && secondDigit != '9')
+					if (firstDigit != '8' || firstDigit = '8' && secondDigit != '9')
 				{
 						putchar(comma);
 						putchar(space);
