@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
   * main - prints if number is positive, 0 or negative
@@ -6,11 +6,11 @@
   */
 int main(void)
 {
-	char a;
+	char alphabet;
 
-	for (a = 'a'; a <= 'z'; ++a)
+	for (alphabet = 'a'; alphabet <= 'z'; ++alphabet)
 	{
-	putchar(a);
+	putchar(alphabet);
 	}
 
 	putchar('\n');
