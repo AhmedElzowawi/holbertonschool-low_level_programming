@@ -14,16 +14,19 @@ int main(void)
 	{
 		for (secondDigit = '0'; secondDigit <= '9'; ++secondDigit)
 		{
-			if (firstDigit < secondDigit)
 			{
 				for (thirdDigit = '0'; thirdDigit <= '9'; ++thirdDigit)
 				{
+				if (firstDigit < secondDigit && secondDigit < thirdDigit)
+					{
 				putchar(firstDigit);
 				putchar(secondDigit);
 				putchar(thirdDigit);
+					}
+
 				}
 
-					if (firstDigit != '8' || (firstDigit == '8' && secondDigit != '9'))
+					if (firstDigit != '7')
 				{
 						putchar(comma);
 						putchar(space);
