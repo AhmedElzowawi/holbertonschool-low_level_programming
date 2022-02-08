@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
   * print_last_digit - prints if number is positive, 0 or negative
@@ -7,8 +8,9 @@
   */
 int print_last_digit(int n)
 {
-	 n = n % 10;
+	int i =n;
+	 i = n % 10;
 
-	_putchar(n);
-	return (n);
+	_putchar(i);
+	return (i);
 }
