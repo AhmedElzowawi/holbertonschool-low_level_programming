@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
   * jack_bauer - prints if number is positive, 0 or negative
