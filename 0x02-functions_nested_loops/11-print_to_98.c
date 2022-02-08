@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
   * print_to_98 - prints if number is positive, 0 or negative
@@ -7,13 +8,13 @@
   */
 void print_to_98(int n)
 {
-	if (n <= 98)
+	int i;
+
+	if (n < 99)
 	{
-	for (n = n; n <= 98; n++)
+	for (i = n; i < 99; i++)
 	{
-		_putchar(n);
-		_putchar(',');
-		_putchar(' ');
+		printf("%d, ", i);
 	}
 	}
 }
