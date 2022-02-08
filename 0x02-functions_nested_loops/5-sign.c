@@ -23,6 +23,7 @@ int print_sign(int n)
 		return (-1);
 	} else
 	{
+		_putchar ('A')
 		return (0);
 	}
 }
