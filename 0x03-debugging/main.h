@@ -1,2 +1,2 @@
-postitive_or_negative();
-largest_number(int a, int b, int c);
+void postitive_or_negative();
+int largest_number(int a, int b, int c);
