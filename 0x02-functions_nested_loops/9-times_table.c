@@ -30,7 +30,7 @@ for (a = 0; a < 10; a++)
 		}
 		else
 		{
-			_putchar((multiplay % 10) + '0')
+			_putchar((multiplay % 10) + '0');
 		}
 		_putchar('\n');
 	}
