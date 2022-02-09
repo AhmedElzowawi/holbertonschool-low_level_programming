@@ -18,12 +18,12 @@ for (a = 0; a < 10; a++)
 		_putchar(',');
 		_putchar(' ');
 		}
-		else if (multiplay >= 10)
+		if (multiplay >= 10)
 		{
 		_putchar((multiplay / 10) + '0');
 		_putchar((multiplay % 10) + '0');
 		}
-		if (multiplay < 10 && b != 0)
+		else if (multiplay < 10 && b != 0)
 		{
 		_putchar(' ');
 		_putchar((multiplay % 10) + '0');
