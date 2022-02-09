@@ -8,84 +8,31 @@ void times_table(void)
 {
 int a, b, multiplay;
 
-for (b = 0; b < 10; b++)
+for (a = 0; a < 10; a++)
 {
-	a = 0;
-	multiplay = (a * b);
-	_putchar(multiplay);
-	_putchar(',');
-	_putchar(' ');
-}
-for (b = 0; b < 10; b++)
-{
-	a = 1;
-	multiplay = (a * b);
-	_putchar(multiplay);
-	_putchar(',');
-	_putchar(' ');
-}
-for (b = 0; b < 10; b++)
-{
-	a = 2;
-	multiplay = (a * b);
-	_putchar(multiplay);
-	_putchar(',');
-	_putchar(' ');
-}
-for (b = 0; b < 10; b++)
-{
-	a = 3;
-	multiplay = (a * b);
-	_putchar(multiplay);
-	_putchar(',');
-	_putchar(' ');
-}
-for (b = 0; b < 10; b++)
-{
-	a = 4;
-	multiplay = (a * b);
-	_putchar(multiplay);
-	_putchar(',');
-	_putchar(' ');
-}
-for (b = 0; b < 10; b++)
-{
-	a = 5;
-	multiplay = (a * b);
-	_putchar(multiplay);
-	_putchar(',');
-	_putchar(' ');
-}
-for (b = 0; b < 10; b++)
-{
-	a = 6;
-	multiplay = (a * b);
-	_putchar(multiplay);
-	_putchar(',');
-	_putchar(' ');
-}
-for (b = 0; b < 10; b++)
-{
-	a = 7;
-	multiplay = (a * b);
-	_putchar(multiplay);
-	_putchar(',');
-	_putchar(' ');
-}
-for (b = 0; b < 10; b++)
-{
-	a = 8;
-	multiplay = (a * b);
-	_putchar(multiplay);
-	_putchar(',');
-	_putchar(' ');
-}
-for (b = 0; b < 10; b++)
-{
-	a = 9;
-	multiplay = (a * b);
-	_putchar(multiplay);
-	_putchar(',');
-	_putchar(' ');
+	for (b = 0; b < 10; b++)
+	{
+		multiplay = (a * b);
+		if (multiplay >= 10)
+		{
+		_putchar((multiplay / 10) + '0');
+		_putchar((multiplay % 10) + '0');
+		}
+		else if (multiplay < 10 && b != 0)
+		{
+		_putchar(' ');
+		_putchar((multiplay % 10) + '0');
+		}
+		if (b != 0)
+		{
+		_putchar(',');
+		_putchar(' ');
+		}
+		else
+		{
+			_putchar((multiplay % 10) + '0')
+		}
+		_putchar('\n');
+	}
 }
 }
