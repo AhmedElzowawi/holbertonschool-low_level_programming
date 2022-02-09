@@ -13,7 +13,12 @@ for (a = 0; a < 10; a++)
 	for (b = 0; b < 10; b++)
 	{
 		multiplay = (a * b);
-		if (multiplay >= 10)
+		if (b != 0)
+		{
+		_putchar(',');
+		_putchar(' ');
+		}
+		else if (multiplay >= 10)
 		{
 		_putchar((multiplay / 10) + '0');
 		_putchar((multiplay % 10) + '0');
@@ -23,17 +28,11 @@ for (a = 0; a < 10; a++)
 		_putchar(' ');
 		_putchar((multiplay % 10) + '0');
 		}
-		if (b != 0)
-		{
-		_putchar(',');
-		_putchar(' ');
-		}
 		else
 		{
 			_putchar((multiplay % 10) + '0');
 		}
 	}
 			_putchar('\n');
-
 }
 }
