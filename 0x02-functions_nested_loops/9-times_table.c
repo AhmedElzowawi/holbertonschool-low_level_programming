@@ -23,7 +23,7 @@ for (a = 0; a < 10; a++)
 		_putchar((multiplay / 10) + '0');
 		_putchar((multiplay % 10) + '0');
 		}
-		else if (multiplay < 10 && b != 0)
+		if (multiplay < 10 && b != 0)
 		{
 		_putchar(' ');
 		_putchar((multiplay % 10) + '0');
