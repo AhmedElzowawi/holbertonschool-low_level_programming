@@ -2,7 +2,8 @@
 
 
 /**
- * main - check the code
+ * print_triangle - check the code
+ *@size: parameter
  * Return: Always 0.
  */
 void print_triangle(int size)
@@ -18,7 +19,7 @@ void print_triangle(int size)
 	for (a = 0; a < size; a++)
 	{
 		for (b = size - a; b > 1; b--)
-		{	
+		{
 		_putchar(' ');
 		}
 		for (c = 0; c <= a; c++)
