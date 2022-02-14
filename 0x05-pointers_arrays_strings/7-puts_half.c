@@ -26,11 +26,11 @@ void puts_half(char *str)
 	else
 	{
 	secondLength = (length + 1) / 2;
-	}
 	while (secondLength <= (length -1))
 	{
 	_putchar(str[secondLength]);
 	secondLength++;
+	}
 	}
 	_putchar('\n');
 }
