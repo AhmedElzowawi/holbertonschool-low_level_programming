@@ -6,17 +6,17 @@
  * Return: Always 0.
  */
 
-char *string_toupper(char *a)
+char *string_toupper(char *s)
 {
 	int i = 0;
 
-	while (a[i] != '\0')
+	while (s[i] != '\0')
 	{
-	if (a[i] >= 'a' && a[i] <= 'z')
+	if (s[i] >= 'a' && s[i] <= 'z')
 	{
-	a[i] -= 32;
+	s[i] -= 32;
 	}
 	i++;
 	}
-	return (a);
+	return (s);
 }
