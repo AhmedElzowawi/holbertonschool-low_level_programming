@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code
- *cap_string
+ * cap_string - check the code
  *@s: parameter
  * Return: Always 0.
  */
