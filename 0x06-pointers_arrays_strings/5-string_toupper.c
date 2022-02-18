@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - check the code
- * @a: parameter
+ * @s: parameter
  * Return: Always 0.
  */
 
