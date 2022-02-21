@@ -14,7 +14,7 @@ for (i = 0; s[i] != c; i++)
 }
 if (s[i] == c)
 {
-return (s);
+return (s + i);
 }
 else
 {
