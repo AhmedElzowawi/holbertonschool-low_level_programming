@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_chessboard - check the code
- * 
+ * @a: parameter
  * Return: Always 0.
  */
 void print_chessboard(char (*a)[8])
