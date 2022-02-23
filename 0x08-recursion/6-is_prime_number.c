@@ -21,7 +21,7 @@ int _prime_counter(int n, int i)
 	}
 }
 /**
- * _sqrt_recursion - check the code
+ * is_prime_number - check the code
  * @n: parameter
  * Return: Always 0.
  */
