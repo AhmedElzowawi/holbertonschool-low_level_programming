@@ -1,19 +1,18 @@
 #include "main.h"
 /**
- * _puts_recursion - check the code
+ * _print_rev_recursion - check the code
  * @s: parameter
  * Return: Always 0.
  */
-void _puts_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		_putchar('\n');
 		return;
 	}
 	else
 	{
+		_print_rev_recursion(s + 1);
 		_putchar(*s);
-		_puts_recursion(s + 1);
 	}
 }
