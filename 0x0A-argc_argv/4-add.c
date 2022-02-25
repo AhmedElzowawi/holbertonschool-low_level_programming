@@ -10,23 +10,20 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int prev = 0;
+	int j = 0;
 
-	if (argc == 1)
-	{
-		printf("0\n");
-	}
-	if (argc > 2)
-	{
-		for (i = 1; argv[i] != NULL; i++)
+		for (i = 1; i < argc; i++)
 		{
-			if (!atoi(argv[i]))
+			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				printf("Error\n");
-				return (1);
+				if (!atoi(argv[i]))
+				{
+					printf("Error\n");
+					return (1);
+				}
+				prev += atoi(argv[i]);
 			}
-			prev += atoi(argv[i]);
 		}
-		printf("%d\n", prev);
-	}
-	return (0);
+	printf("%d\n", prev);
+	return (0);	
 }
