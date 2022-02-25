@@ -26,10 +26,11 @@ int main(int argc, char *argv[])
 	{
 		for (i = 0; money != 0; i++)
 		{
-			
+			if (values[i] <= money)
+			{
 				j += money / values[i];
 				money %= values[i];
-			
+			}
 		}
 		printf("%d\n", j);
 	}
