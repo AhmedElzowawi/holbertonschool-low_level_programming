@@ -25,10 +25,7 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			if (atoi(argv[i]) != '\0')
-			{
 			prev += atoi(argv[i]);
-			}
 		}
 		printf("%d\n", prev);
 	}
