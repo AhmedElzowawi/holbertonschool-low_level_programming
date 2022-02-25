@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 /**
  * main - check the code
  * @argc: parameter
@@ -10,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int j; /* minimum number of coins */
+	int j = 0; /* minimum number of coins */
 	int money = atoi(argv[1]);
 	int values[] = {25, 10, 5, 2, 1};
 
@@ -27,11 +26,10 @@ int main(int argc, char *argv[])
 	{
 		for (i = 0; money != 0; i++)
 		{
-			if (values[i] <= money)
-			{
+			
 				j += money / values[i];
 				money %= values[i];
-			}
+			
 		}
 		printf("%d\n", j);
 	}
