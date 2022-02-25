@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - check the code
  * @argc: parameter
@@ -10,13 +11,13 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int prev = 0;
-	int j = 0;
+	int j;
 
 		for (i = 1; i < argc; i++)
 		{
 			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				if (!atoi(argv[i]))
+				if (isalpha(argv[i][j]))
 				{
 					printf("Error\n");
 					return (1);
