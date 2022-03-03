@@ -2,6 +2,7 @@
 #include <stdlib.h>
 /**
  * _realloc - prints buffer in hexa
+ * @ptr: the address of memory to print
  * @old_size: the size of the memory to print
  * @new_size: parameter
  * Return: Nothing.
