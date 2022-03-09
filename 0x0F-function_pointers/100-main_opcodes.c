@@ -8,6 +8,9 @@
  */
 int main(int argc, char **argv)
 {
+	char *ptr;
+	int i;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -18,5 +21,9 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(2);
 	}
+	ptr = (char *)main;
+	for (i = 0; i < atoi(argv[1]) - 1; i++)
+		printf("%02hhx", ptr[i]);
+	printf("%02hhx\n", ptr[i]);
 	return (0);
 }
