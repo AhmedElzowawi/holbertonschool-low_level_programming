@@ -32,7 +32,7 @@ int op_mul(int a, int b)
 	return (a * b);
 }
 /**
- * opop_div_add - check the code
+ * op_div_add - check the code
  * @a: parameter
  * @b: parameter
  * Return: Always 0.
