@@ -20,11 +20,12 @@ int main(int argc, char **argv)
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 	f = get_op_func(argv[2]);
-	if (f == NULL)
+	if (!f)
 	{
 		printf("Error\n");
 		exit(99);
 	}
+	
 	printf("%d\n", f(a, b));
 	return (0);
 }
