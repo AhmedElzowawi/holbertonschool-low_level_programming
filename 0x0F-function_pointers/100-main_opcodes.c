@@ -24,10 +24,15 @@ int main(int argc, char **argv)
 		exit(2);
 	}
 	ptr = (char *)main;
-	for (i = 0; i < bytes - 1; i++)
+
+	for (i = 0; i < bytes; i++)
 		{
-		printf("%02hhx", ptr[i]);
+			if (i == bytes - 1)
+			{
+				printf("%02hhx\n", ptr[i]);
+				break;
+			}
+			printf("%02hhx", ptr[i]);
 		}
-	printf("%02hhx\n", ptr[i]);
 	return (0);
 }
