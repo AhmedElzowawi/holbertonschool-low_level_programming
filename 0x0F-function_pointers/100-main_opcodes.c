@@ -8,8 +8,8 @@
  */
 int main(int argc, char **argv)
 {
-	char *ptr;
 	int i, bytes;
+	char *ptr;
 
 	if (argc != 2)
 	{
