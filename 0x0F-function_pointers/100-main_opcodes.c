@@ -24,6 +24,6 @@ int main(int argc, char **argv)
 	ptr = (char *)main;
 	for (i = 0; i < atoi(argv[1]) - 1; i++)
 		printf("%02hhx ", ptr[i]);
-	printf("%02hhx", ptr[i]);
+	printf("%02hhx\n", ptr[i]);
 	return (0);
 }
