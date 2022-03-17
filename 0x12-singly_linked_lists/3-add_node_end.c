@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_node - check the code
+ * add_node_end - check the code
  * @head: parameter
  * @str: parameter
  * Return: Always 0.
@@ -15,7 +15,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 
 	while (str[i])
-			i++;
+		i++;
 
 	new->len = i;
 	new->str = strdup(str);
