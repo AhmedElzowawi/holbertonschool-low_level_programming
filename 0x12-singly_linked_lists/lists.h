@@ -14,12 +14,12 @@
  */
 typedef struct list_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 
 list_t *add_node_end(list_t **head, const char *str);
-void before_main() __attribute__((constructor));
+void before_main(void) __attribute__((constructor));
 
 #endif
