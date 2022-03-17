@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_list - check the code
+ * add_node - check the code
  * @head: parameter
  * @str: parameter
  * Return: Always 0.
