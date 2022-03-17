@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
  * print_list - check the code
- * @h: parameter
+ * @head: parameter
+ * @str: parameter
  * Return: Always 0.
  */
 list_t *add_node(list_t **head, const char *str)
