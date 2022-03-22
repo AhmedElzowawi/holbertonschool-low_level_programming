@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * add_nodeint - check the code
- * @h: parameter
+ * @head: parameter
  * @n: parameter
  * Return: Always 0.
  */
