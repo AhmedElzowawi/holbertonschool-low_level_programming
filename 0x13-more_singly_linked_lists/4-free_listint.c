@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_nodeint_end - check the code
+ * free_listint - check the code
  * @head: parameter
  * Return: Always 0.
  */
