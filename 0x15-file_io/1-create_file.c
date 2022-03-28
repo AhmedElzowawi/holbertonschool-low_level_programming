@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * read_textfile - check the code
+ * create_file - check the code
  * @filename: parameter
- * @letters: parameters
+ * @text_content: parameters
  * Return: Always 0.
  */
 int create_file(const char *filename, char *text_content)
@@ -18,7 +18,7 @@ int create_file(const char *filename, char *text_content)
 		text_content = "";
 	while (text_content[i])
 		i++;
-	write(file, text_content, i);
+	write(file, text_content, i - 1);
 	close(file);
 		return (1);
 }
