@@ -18,7 +18,7 @@ void cp(const char *from, const char *to)
 	}
 	size = read(fileR, buf, 1024);
 
-	fileW = open(to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	fileW = open(to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fileW == -1 || to == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", to);
@@ -26,15 +26,15 @@ void cp(const char *from, const char *to)
 	}
 	write(fileW, buf, size);
 
-	if (close(fileW) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fileW);
-		exit(100);
-	}
-	
 	if (close(fileR) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fileR);
+		exit(100);
+	}
+
+	if (close(fileW) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fileW);
 		exit(100);
 	}
 }
