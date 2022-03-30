@@ -23,18 +23,18 @@ void cp(const char *from, const char *to)
 		exit(99);
 	}
 	while ((size = read(fileR, buf, 1024)) > 0)
+	{
+		if (write(fileW, buf, size) != size)
 		{
-			if (write(fileW, buf, size) != size)
-			{
-				dprintf(STDERR_FILENO, "Error: Can't write to %s\n", to);
-				exit (99);
-			}
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", to);
+			exit(99);
 		}
+	}
 
 	if (size == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from);
-		exit (98);
+		exit(98);
 	}
 	if (close(fileR) == -1)
 	{
