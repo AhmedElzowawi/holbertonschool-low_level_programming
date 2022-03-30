@@ -16,16 +16,26 @@ void cp(const char *from, const char *to)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from);
 		exit(98);
 	}
-	size = read(fileR, buf, 1024);
-
-	fileW = open(to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	fileW = open(to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fileW == -1 || to == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", to);
 		exit(99);
 	}
-	write(fileW, buf, size);
+	while ((size = read(fileR, buf, 1024)) > 0)
+		{
+			if (write(fileW, buf, size) != size)
+			{
+				dprintf(STDERR_FILENO, "Error: Can't write to %s\n", to);
+				exit (99);
+			}
+		}
 
+	if (size == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from);
+		exit (98);
+	}
 	if (close(fileR) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fileR);
