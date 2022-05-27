@@ -3,6 +3,7 @@
  * hash_table_set - check the code
  * @key: key
  * @value: value
+ * @ht: ht
  * Return: Always EXIT_SUCCESS.
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -45,4 +46,4 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new->next = ht->array[idx];
 	ht->array[idx] = new;
 	return (1);
-}	
+}
